@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/Users/josemelgar/Desktop/Projects/server/src/server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "npx tailwindcss -i src/public/css/styles.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "tailwindcss": "^3.4.0"
+  }
+}
