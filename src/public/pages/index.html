@@ -24,22 +24,36 @@
       </ul>
     </nav>
 
-    <div id="sign-container">
-      <div class="bg-blue-700 h-80 flex" id="signUp">
-        <form action="" class="flex">
-          <div>
-            <label for="user">Username</label>
-            <input class="inline-block" type="text" id="user" fname="user" />
-          </div>
-          <div>
-            <label for="password">Password</label>
-            <input
-              class="inline-block"
-              type="text"
-              id="password"
-              fname="password"
-            />
-          </div>
+    <div id="sign-container" class="flex justify-around my-10">
+      <div class="bg-blue-500 h-80 flex w-96 rounded" id="signUp">
+        <form action="" class="flex w-full">
+          <ul class="w-full">
+            <li class="flex mx-4 my-10">
+              <label class="w-20" for="user">Username:</label>
+              <input
+                class="inline-block rounded mx-2 ps-2"
+                type="text"
+                id="user"
+                fname="user"
+              />
+            </li>
+            <li class="flex mx-4 my-14">
+              <label class="w-20" for="password">Password:</label>
+              <input
+                class="inline-block rounded mx-2 ps-2"
+                type="text"
+                id="password"
+                fname="password"
+              />
+            </li>
+            <li class="flex justify-around">
+              <button
+                class="bg-gray-300 p-2 rounded-full w-32 border-solid border-2 border-sky-500"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
         </form>
       </div>
     </div>
