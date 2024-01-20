@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="flex justify-between mt-1 p-2">
+      <h1 class="inline-block text-center ml-4">Bill Tracker</h1>
+      <ul class="h-10 flex">
+        <li
+          id="loginBtn"
+          class="my-0 mx-4 cursor-pointer rounded-full px-6 flex items-center bg-violet-500 hover:bg-violet-600 hover:text-white font-medium"
+        >
+          Login
+        </li>
+        <li
+          class="my-0 mx-4 cursor-pointer rounded-full px-6 flex items-center bg-violet-500 hover:bg-violet-600 hover:text-white font-medium"
+        >
+          Sign Up
+        </li>
+      </ul>
+    </nav>
+
+    <div id="sign-container" class="flex justify-around my-10">
+      <div class="bg-blue-500 h-80 flex w-96 rounded" id="LoginUp">
+        <form action="" id="LoginForm" class="flex w-full">
+          <ul class="w-full">
+            <li class="flex mx-4 my-10">
+              <label class="w-20" for="user">Username:</label>
+              <input
+                class="inline-block rounded mx-2 ps-2"
+                type="text"
+                id="user"
+                fname="user"
+              />
+            </li>
+            <li class="flex mx-4 my-14">
+              <label class="w-20" for="password">Password:</label>
+              <input
+                class="inline-block rounded mx-2 ps-2"
+                type="text"
+                id="password"
+                fname="password"
+              />
+            </li>
+            <li class="flex justify-around">
+              <button
+                class="bg-gray-300 p-2 rounded-full w-32 border-solid border-2 border-sky-500"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="/home.js"></script>
+  </body>
+</html>

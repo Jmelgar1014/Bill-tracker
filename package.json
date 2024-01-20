@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "/Users/josemelgar/Desktop/Projects/server/src/server.js",
+  "main": "/Users/josemelgar/Desktop/Projects/server/src/newServer.js",
   "scripts": {
     "dev": "nodemon newServer.js",
     "build": "npx tailwindcss -i src/public/css/styles.css -o ./dist/output.css --watch"
