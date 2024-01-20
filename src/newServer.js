@@ -9,8 +9,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //serve static files
+
 app.use(express.static(path.join(__dirname, "public")));
+
 app.use(express.static(path.join(__dirname, "..", "dist")));
+
 app.get("^/$|/index(.html)?", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "pages", "index.html"));
 });
@@ -23,7 +26,7 @@ app.get("/*", (req, res) => {
   res.status(404).sendFile(path.join(__dirname, "public", "pages", "404.html"));
 });
 
-console.log(path.join(__dirname, "..", "dist"));
+console.log(path.join(__dirname, "public", "JS-pages", "home.js"));
 app.listen(PORT, () => {
   console.log(`listening on port${PORT}`);
 });
