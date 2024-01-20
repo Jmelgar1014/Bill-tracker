@@ -2,6 +2,7 @@ const http = require("http");
 const path = require("path");
 const fs = require("fs");
 const fsPromises = require("fs").promises;
+const mysql = require("mysql");
 
 const PORT = process.env.PORT || 3500;
 
@@ -75,6 +76,19 @@ const server = http.createServer((req, res) => {
     );
     console.log(`file path doesnt exist ${filePath}`);
   }
+});
+
+//create connection to database
+let connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "Thiago2023",
+  database: "Tracker",
+});
+
+connection.connect(function (err) {
+  if (err) throw err;
+  console.log("connected");
 });
 
 server.listen(PORT, () => {
